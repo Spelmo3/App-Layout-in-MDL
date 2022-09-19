@@ -8,8 +8,8 @@
         <link rel="icon" href="/favicon.ico">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="mdl/material.min.css">
+        <link rel="stylesheet" href="style.css">
         <script src="mdl/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,14 +29,14 @@
         <div class="mdl-layout-spacer"></div>
 
         <!-- Options Button-->
-        <button id="demo-menu-lower-right"
+        <button id="optionsbtn"
         class="mdl-button mdl-js-button mdl-button--icon">
         <i class="material-icons">more_vert</i>
         </button>
 
         <!-- Options Menu-->
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-         for="demo-menu-lower-right">
+         for="optionsbtn">
         <li class="mdl-menu__item">Option 1</li>
         <li class="mdl-menu__item">Option 2</li>
         <li disabled class="mdl-menu__item">Disabled Option 3</li>
@@ -46,7 +46,7 @@
 
     <!-- Main menu/slide-in-menu -->
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Menu</span>
+      <span class="mdl-layout-title"><b>Menu</b></span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Link 1</a>
         <a class="mdl-navigation__link" href="">Link 2</a>
@@ -56,25 +56,36 @@
     </div>
 
 
-<main class="mdl-layout__content">
+<div class="mainstuff">
+    <main class="mdl-layout__content">
     <div class="page-content">
-        <h1>Hello World</h1>
-        <h2>Testing page content</h2>
-        <div class="mdl-card mdl-shadow--4dp">
-            <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
-             alt="" style="padding:10px;">
+        <h3>Hello World</h3>
+        <h4>Test login page</h4>
+
+        <!-- Simple Textfield -->
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Username</label>
             </div>
-            <div class="mdl-card__supporting-text">
-              Auckland Sky Tower, taken March 24th, 2014
+        </form>
+    
+         <!-- Simple Textfield -->
+         <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="password" id="sample2">
+            <label class="mdl-textfield__label" for="sample2">Password</label>
             </div>
-            <div class="mdl-card__supporting-text">
-            The Sky Tower is an observation and telecommunications tower located in Auckland,
-            New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-            in the Southern Hemisphere.
-            </div>
-          </div>
+        </form>
+
     </div>
-    </main>
+
+
+</main>
+</div>
+
+
+
 </div>
 
 
