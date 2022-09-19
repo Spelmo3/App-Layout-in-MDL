@@ -3,15 +3,79 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>A Basic HTML5 Template</title>
-        <meta name="Simple" content="A simple web app layout environment using Material Design.">
-        <meta name="author" content="SitePoint">
-
+        <meta name="WAMD" content="A simple web app layout environment using Material Design.">
+        <meta name="Adam Spelman" content="aswebdev">
         <link rel="icon" href="/favicon.ico">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mdl/material.min.css">
+        <script src="mdl/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
 
 <body>
 
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">App Name</span>
+        <!-- Add spacer, to align options button to the right -->
+        <div class="mdl-layout-spacer"></div>
+
+        <!-- Options Button-->
+        <button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+        </button>
+
+        <!-- Options Menu-->
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+         for="demo-menu-lower-right">
+        <li class="mdl-menu__item">Option 1</li>
+        <li class="mdl-menu__item">Option 2</li>
+        <li disabled class="mdl-menu__item">Disabled Option 3</li>
+        <li class="mdl-menu__item">Option 4</li>
+        </ul>
+    </header>
+
+    <!-- Main menu/slide-in-menu -->
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Menu</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link 1</a>
+        <a class="mdl-navigation__link" href="">Link 2</a>
+        <a class="mdl-navigation__link" href="">Link 3</a>
+        <a class="mdl-navigation__link" href="">Link 4</a>
+      </nav>
+    </div>
+
+
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <h1>Hello World</h1>
+        <h2>Testing page content</h2>
+        <div class="mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
+             alt="" style="padding:10px;">
+            </div>
+            <div class="mdl-card__supporting-text">
+              Auckland Sky Tower, taken March 24th, 2014
+            </div>
+            <div class="mdl-card__supporting-text">
+            The Sky Tower is an observation and telecommunications tower located in Auckland,
+            New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
+            in the Southern Hemisphere.
+            </div>
+          </div>
+    </div>
+    </main>
+</div>
 
 
 </body>
