@@ -1,4 +1,7 @@
+body{background-color: gainsboro;}
+
 .mainstuff
-{
+{  
     margin: auto;
+    text-align: center;
 }
